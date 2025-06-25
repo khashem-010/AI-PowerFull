@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skin>
+  <!-- Main Settings Screen -->
+  <screen name="AIPowerFullSetup" position="center,center" size="1200,700" title="AI-PowerFull Settings">
+    <!-- Background -->
+    <ePixmap position="0,0" size="1200,700" pixmap="skin/images/background.png" zPosition="-1"/>
+    
+    <!-- Header -->
+    <widget source="Title" render="Label" position="60,40" size="1080,60" font="Regular;40" transparent="1" foregroundColor="#FFFFFF"/>
+    
+    <!-- Configuration List -->
+    <widget name="config" position="60,120" size="1080,480" scrollbarMode="showOnDemand" transparent="1" itemHeight="40" foregroundColorSelected="#00FF00"/>
+    
+    <!-- Action Buttons -->
+    <ePixmap position="360,620" size="200,50" pixmap="skin/images/button_red.png" zPosition="1"/>
+    <ePixmap position="600,620" size="200,50" pixmap="skin/images/button_green.png" zPosition="1"/>
+    
+    <widget source="key_red" render="Label" position="360,620" size="200,50" zPosition="2" font="Regular;30" halign="center" valign="center" transparent="1" foregroundColor="#FFFFFF"/>
+    <widget source="key_green" render="Label" position="600,620" size="200,50" zPosition="2" font="Regular;30" halign="center" valign="center" transparent="1" foregroundColor="#FFFFFF"/>
+  </screen>
+
+  <!-- Translation Preview Screen -->
+  <screen name="AIPowerFullPreview" position="center,center" size="1280,720" title="Translation Preview">
+    <!-- Background Gradient -->
+    <ePixmap position="0,0" size="1280,720" pixmap="skin/images/preview_bg.png" zPosition="-1"/>
+    
+    <!-- Original Text -->
+    <widget source="original_label" render="Label" position="100,100" size="1080,40" font="Regular;32" transparent="1" foregroundColor="#AAAAAA"/>
+    <widget source="original_text" render="Label" position="100,150" size="1080,200" font="Regular;28" halign="center" valign="center" backgroundColor="#222222" transparent="0"/>
+    
+    <!-- Translated Text -->
+    <widget source="translated_label" render="Label" position="100,400" size="1080,40" font="Regular;32" transparent="1" foregroundColor="#00FF00"/>
+    <widget source="translated_text" render="Label" position="100,450" size="1080,200" font="Regular;28" halign="center" valign="center" backgroundColor="#333333" transparent="0" foregroundColor="#00FF00"/>
+    
+    <!-- Navigation -->
+    <ePixmap position="540,680" size="200,50" pixmap="skin/images/button_exit.png" zPosition="1"/>
+    <widget source="key_exit" render="Label" position="540,680" size="200,50" zPosition="2" font="Regular;30" halign="center" valign="center" transparent="1"/>
+  </screen>
+
+  <!-- Progress Screen -->
+  <screen name="AIPowerFullProgress" position="center,center" size="800,200" title="Processing...">
+    <widget source="progress_text" render="Label" position="50,50" size="700,40" font="Regular;32" halign="center" transparent="1"/>
+    <widget name="progressbar" position="50,100" size="700,20" backgroundColor="#555555" foregroundColor="#00FF00"/>
+  </screen>
+</skin>
