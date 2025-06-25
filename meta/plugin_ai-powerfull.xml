@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+  <name>AI-PowerFull</name>
+  <name lang="ar">AI-PowerFull</name>
+  <description>AI-powered subtitle translation and voice dubbing</description>
+  <description lang="ar">ترجمة ودبلجة الذكاء الاصطناعي</description>
+  
+  <version>1.0.0</version>
+  <author>YourName</author>
+  <author-mail>support@yourdomain.com</author-mail>
+  
+  <requirements>
+    <enigma2 minversion="4.0"/>
+    <python minversion="3.8"/>
+    <package name="python3-requests" minversion="2.25.1"/>
+  </requirements>
+  
+  <supportedimages>
+    <image>egami</image>
+    <image>openatv</image>
+    <image>openpli</image>
+  </supportedimages>
+  
+  <packagename>enigma2-plugin-extensions-ai-powerfull</packagename>
+  
+  <components>
+    <component type="plugin">Extensions/AI-PowerFull</component>
+  </components>
+  
+  <tags>
+    <tag>subtitle</tag>
+    <tag>translation</tag>
+    <tag>AI</tag>
+    <tag>arabic</tag>
+  </tags>
+</plugin>
